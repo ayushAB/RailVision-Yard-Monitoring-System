@@ -1,0 +1,28 @@
+<div class="dashboard-card">
+
+    @if(title()){
+
+        <div class="card-header">
+
+            @if(icon()){
+
+                <i
+                    [class]="icon()"
+                    [style.color]="accent()">
+                </i>
+
+            }
+
+            <span>{{title()}}</span>
+
+        </div>
+
+    }
+
+    <div class="card-body">
+
+        <ng-content></ng-content>
+
+    </div>
+
+</div>

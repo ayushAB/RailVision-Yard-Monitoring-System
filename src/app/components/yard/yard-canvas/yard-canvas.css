@@ -1,0 +1,29 @@
+
+.yard {
+        display: grid;
+        /* force explicit 2x2 grid for up to four tracks; fallback to 1 column on narrow screens */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        max-height: calc(100vh - 220px);
+        overflow-y: auto;
+        padding: 16px;
+        align-items: start;
+        justify-items: stretch;
+}
+
+@media (max-width: 800px) {
+    .yard {
+        grid-template-columns: 1fr;
+    }
+}
+
+.yard > app-track-renderer {
+    min-height: 0;
+    width: 100%;
+    display: block;
+}
+
+.yard::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}

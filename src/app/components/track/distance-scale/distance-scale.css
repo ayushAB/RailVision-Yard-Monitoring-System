@@ -1,0 +1,13 @@
+.scale{
+
+display:grid;
+
+grid-template-columns:repeat(11,1fr);
+
+margin-top:10px;
+
+color:#8EBFFF;
+
+font-size:12px;
+
+}

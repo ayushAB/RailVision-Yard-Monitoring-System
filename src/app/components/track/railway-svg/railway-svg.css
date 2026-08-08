@@ -1,0 +1,29 @@
+.track-svg{
+
+    width:100%;
+
+    height:170px;
+
+}
+
+.rail{
+
+    stroke:#A8A8A8;
+
+    stroke-width:6;
+
+}
+
+.sleeper{
+
+    stroke:#767676;
+
+    stroke-width:4;
+
+}
+
+.dead-end{
+
+    fill:#D5D5D5;
+
+}

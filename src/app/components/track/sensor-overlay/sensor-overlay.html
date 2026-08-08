@@ -1,0 +1,11 @@
+@for (sensor of items(); track sensor.id) {
+  <div class="sensor" [style.left.%]="sensor.left">
+    <div class="head">
+      {{ sensor.id }}
+    </div>
+
+    <div class="pole"></div>
+
+    <div class="label">{{ sensor.position }}m</div>
+  </div>
+}

@@ -1,0 +1,18 @@
+@use './variables' as *;
+
+body {
+    margin: 0;
+    background: $bg;
+    color: $text;
+    font-family: "Inter", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.card-dark {
+    background: $card;
+    border: 1px solid $border;
+    border-radius: $radius;
+}

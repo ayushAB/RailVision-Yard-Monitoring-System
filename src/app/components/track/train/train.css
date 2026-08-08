@@ -1,0 +1,24 @@
+:host {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.train {
+    position: absolute;
+    left: 0;
+    top: 84px;
+    transform: translateX(-50%);
+    will-change: transform;
+
+    z-index: 999;
+
+    /* increased wagon width for more realistic appearance */
+    width: 320px;
+}
+
+.train svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}

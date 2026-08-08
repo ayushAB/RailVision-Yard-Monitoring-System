@@ -1,0 +1,55 @@
+<div class="sidebar">
+
+    <div class="logo">
+
+        <div class="logo-icon">
+
+            <i class="pi pi-truck"></i>
+
+        </div>
+
+        <div>
+
+            <h2>RailVision</h2>
+
+            <span>Yard Monitoring System</span>
+
+        </div>
+
+    </div>
+
+    <nav>
+
+        @for(item of menu(); track item.title){
+
+        <a
+
+            [routerLink]="item.route"
+
+            routerLinkActive="active">
+
+            <i [class]="item.icon"></i>
+
+            <span>{{item.title}}</span>
+
+        </a>
+
+        }
+
+    </nav>
+
+    <div class="system-status">
+
+        <div class="status">
+
+            <span class="dot"></span>
+
+            All Systems Operational
+
+        </div>
+
+        <small>Version 1.0.0</small>
+
+    </div>
+
+</div>

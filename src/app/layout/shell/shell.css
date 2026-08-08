@@ -1,0 +1,27 @@
+.shell {
+    display: grid;
+    grid-template-columns: var(--sidebar-width) 1fr;
+    height: 100vh;
+    background: linear-gradient(135deg, #07131f 0%, #091827 100%);
+}
+
+.content {
+    display: grid;
+    grid-template-rows: var(--header-height) 1fr;
+    overflow: hidden;
+}
+
+main {
+    padding: 18px 20px 20px;
+    overflow-y: auto;
+    background: transparent;
+}
+
+main::-webkit-scrollbar {
+    width: 8px;
+}
+
+main::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 999px;
+}
